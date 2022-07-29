@@ -1,0 +1,233 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Dosis', sans-serif;
+	background-color: #050726;
+	color: #8a9597;
+	font-size: 20px;
+	list-style: none;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: content-box;
+}
+
+
+/* SECCION INDEX */
+
+/* Menu */
+
+.Menu, .Logo {
+	background-color: white;
+}
+.Menu .Secciones ul {
+	list-style: none;
+	column-gap: 10px;
+	margin: 15px;
+	padding: 0%;
+}
+
+.Menu .Secciones ul a {
+	text-decoration: none;
+	color: #8a9597;
+}
+
+.Menu {
+	display: flex;
+}
+
+.Secciones {
+	justify-content: flex-end;
+}
+
+.Secciones li {
+	display: inline-block;
+	font-size: 25px;
+}
+
+
+/* Encabezados */
+.Encabezado h1 {
+	background-color: #070b39;
+	text-align: center;
+	font-size: 50px;
+}
+
+.EncabezadosIndex{
+	background-color: #070b39;
+	text-align: center;
+	font-size: 35px;
+}
+
+.VendidosYOfertas {
+	display: flex;
+	flex-wrap: nowrap;
+	column-gap: 50px;
+	row-gap: 50px;
+	justify-content: center;
+	align-items: stretch;
+	background-color: #0a0e4c;
+}
+
+.Productos h3{
+	font-size: 25px;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+}
+
+.Productos ul{
+	font-size: 15px;
+	list-style: none;
+	padding: 0%;
+	list-style: square;
+}
+
+/* Ubicacion */
+
+.ImagenUbicacion {
+	text-align: center;
+}
+
+
+
+/* SECCION NOSOTROS */ 
+.EncabezadoNosotros h2{
+	text-align: center;
+	background-color: #070b39;
+	font-size: 35px;
+}
+
+.NosotrosSub h2, h3{
+	text-align: left;
+	font-size: 25px;
+	background-color: #0a0e4c;
+}
+
+.NosotrosSub p {
+	text-align: left;
+	font-size: 20px;
+}
+
+
+
+/* SECCION PRODUCTOS*/
+
+.EncabezadoProductos {
+	text-align: center;
+	background-color: #070b39;
+	font-size: 23px;
+}
+
+
+.ProductosP h3 {
+	font-size: 25px;
+	text-align: left;
+	background-color: #0a0e4c;
+}
+
+.ProductosPImg {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.ProdcutosPImg ul, li, span{
+	font-size: 15px;
+	list-style: square;
+}
+
+
+
+/*SECCION CONTACTO*/
+.EncabezadoContacto h2{
+	text-align: left;
+	background-color: #070b39;
+	font-size: 35px;
+}
+
+
+
+
+/* Footer */
+.Footer {
+	background-color: white;
+	width: auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: 'Tel Copyright Redes'
+						'Tel Copyright Redes'
+						'Tel Copyright Redes';
+}
+
+.Tel li {
+	text-align: left;
+	list-style: none;
+	text-decoration: none;
+}
+
+.Redes ul {
+	text-align: right;
+	list-style: none;
+}
+
+.Redes ul  li a {
+	text-decoration: none;
+	list-style: none;
+}
+
+.Copyright {
+	text-align: center;
+	font-size: small;
+	list-style: none;
+	text-decoration: none;
+}
+
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 480px) {
+
+	.Menu, .Logo {
+		background-color: white;
+	}
+
+	.Menu .Secciones {
+		max-width: 100%;
+	}
+
+	.Secciones ul {
+			display: flex;
+			align-items: flex-start;	
+		}
+
+	.Encabezado h1 {
+		font-size: 40px;
+	}
+
+	.ImagenUbicacion {
+		max-width: 100%;
+	}
+
+	.Productos img {
+		display: flex;
+		margin: auto;
+	}
+}
+
+@media (min-width: 767px) {
+
+}
+
+
+@media (min-width: 991px) {
+	
+	
+}
+
+
+@media (min-width: 1199px) {
+
+}
