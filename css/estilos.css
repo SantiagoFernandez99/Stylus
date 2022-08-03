@@ -8,6 +8,9 @@ body {
 	font-size: 20px;
 	list-style: none;
 	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 * {
@@ -25,7 +28,7 @@ body {
 .Menu .Secciones ul {
 	list-style: none;
 	column-gap: 10px;
-	margin: 15px;
+	margin: 10px;
 	padding: 0%;
 }
 
@@ -36,15 +39,26 @@ body {
 
 .Menu {
 	display: flex;
-}
-
-.Secciones {
-	justify-content: flex-end;
+	justify-content: space-between;
 }
 
 .Secciones li {
 	display: inline-block;
 	font-size: 25px;
+}
+
+.MenuBtn {
+	display: none;
+	color: black;
+	font-size: 20px;
+	border: none;
+	padding: 10px 20px;
+	padding-left: 25px;
+	background-color: transparent;
+	background-image: url("../imagenes/menu.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-color: transparent;
 }
 
 
@@ -55,7 +69,7 @@ body {
 	font-size: 50px;
 }
 
-.EncabezadosIndex{
+.EncabezadoSec h2 {
 	background-color: #070b39;
 	text-align: center;
 	font-size: 35px;
@@ -64,8 +78,7 @@ body {
 .VendidosYOfertas {
 	display: flex;
 	flex-wrap: nowrap;
-	column-gap: 50px;
-	row-gap: 50px;
+	column-gap: 100px;
 	justify-content: center;
 	align-items: stretch;
 	background-color: #0a0e4c;
@@ -73,31 +86,34 @@ body {
 
 .Productos h3{
 	font-size: 25px;
-	flex-wrap: nowrap;
 	align-items: flex-start;
 }
 
-.Productos ul{
+.ProdcutosImg{
+	padding-inline-start: 50px;
+	margin: 10px;
+}
+
+.Productos li{
 	font-size: 15px;
 	list-style: none;
-	padding: 0%;
+	padding-inline-start: 10px;
+	margin: 0%;
 	list-style: square;
+	text-align: left;
 }
 
 /* Ubicacion */
 
 .ImagenUbicacion {
 	text-align: center;
+	margin: 50px;
 }
 
 
 
 /* SECCION NOSOTROS */ 
-.EncabezadoNosotros h2{
-	text-align: center;
-	background-color: #070b39;
-	font-size: 35px;
-}
+
 
 .NosotrosSub h2, h3{
 	text-align: left;
@@ -113,14 +129,6 @@ body {
 
 
 /* SECCION PRODUCTOS*/
-
-.EncabezadoProductos {
-	text-align: center;
-	background-color: #070b39;
-	font-size: 23px;
-}
-
-
 .ProductosP h3 {
 	font-size: 25px;
 	text-align: left;
@@ -153,31 +161,26 @@ body {
 /* Footer */
 .Footer {
 	background-color: white;
-	width: auto;
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-areas: 'Tel Copyright Redes'
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:'Tel Copyright Redes'
 						'Tel Copyright Redes'
 						'Tel Copyright Redes';
+	margin-top: auto;
 }
 
 .Tel li {
 	text-align: left;
 	list-style: none;
-	text-decoration: none;
 }
 
-.Redes ul {
+.Redes li, a {
 	text-align: right;
-	list-style: none;
-}
-
-.Redes ul  li a {
 	text-decoration: none;
 	list-style: none;
 }
 
-.Copyright {
+.Copyright li {
 	text-align: center;
 	font-size: small;
 	list-style: none;
@@ -185,49 +188,51 @@ body {
 }
 
 
-
 /* MEDIA QUERY */
 
 @media (max-width: 480px) {
 
+	/* INDEX */
 	.Menu, .Logo {
 		background-color: white;
 	}
 
-	.Menu .Secciones {
-		max-width: 100%;
+	.Secciones ul {
+			display: none;
+		}
+	
+	.MenuBtn {
+	display: inline-block;
 	}
 
-	.Secciones ul {
-			display: flex;
-			align-items: flex-start;	
-		}
+	.Secciones{
+		justify-content: flex-end;
+	}
 
 	.Encabezado h1 {
 		font-size: 40px;
 	}
 
+	.VendidosYOfertas {
+		column-gap: 0;
+	}
+
 	.ImagenUbicacion {
-		max-width: 100%;
-	}
-
-	.Productos img {
-		display: flex;
-		margin: auto;
+		width: 100%;
+		margin: 0%;
 	}
 }
 
-@media (min-width: 767px) {
+@media (max-width: 990px) {
 
-}
-
-
-@media (min-width: 991px) {
+	.VendidosYOfertas{
+		column-gap: 0%;
+	}
 	
-	
+	.ImagenUbicacion{
+		width: 100%;
+		margin: 0%;
+	}
 }
 
 
-@media (min-width: 1199px) {
-
-}
