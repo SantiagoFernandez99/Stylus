@@ -3,8 +3,9 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Dosis', sans-serif;
-	background-color: #050726;
-	color: #8a9597;
+	background: rgb(30,35,204);
+	background: linear-gradient(0deg, rgba(30,35,204,1) 0%, rgba(13,19,126,1) 25%, rgba(8,6,52,1) 50%);
+	color: #B8B8B8;
 	font-size: 20px;
 	list-style: none;
 	text-decoration: none;
@@ -23,7 +24,7 @@ body {
 /* Menu */
 
 .Menu, .Logo {
-	background-color: white;
+	background-color: #F2F2F2;
 }
 .Menu .Secciones ul {
 	list-style: none;
@@ -34,7 +35,7 @@ body {
 
 .Menu .Secciones ul a {
 	text-decoration: none;
-	color: #8a9597;
+	color: black;
 }
 
 .Menu {
@@ -64,13 +65,13 @@ body {
 
 /* Encabezados */
 .Encabezado h1 {
-	background-color: #070b39;
+	background-color: #6E6E6E; 
 	text-align: center;
 	font-size: 50px;
 }
 
 .EncabezadoSec h2 {
-	background-color: #070b39;
+	background-color: #6E6E6E;
 	text-align: center;
 	font-size: 35px;
 }
@@ -81,7 +82,7 @@ body {
 	column-gap: 100px;
 	justify-content: center;
 	align-items: stretch;
-	background-color: #0a0e4c;
+	
 }
 
 .Productos h3{
@@ -118,7 +119,7 @@ body {
 .NosotrosSub h2, h3{
 	text-align: left;
 	font-size: 25px;
-	background-color: #0a0e4c;
+	background-color: #6E6E6E;
 }
 
 .NosotrosSub p {
@@ -132,7 +133,7 @@ body {
 .ProductosP h3 {
 	font-size: 25px;
 	text-align: left;
-	background-color: #0a0e4c;
+	background-color: #6E6E6E;
 }
 
 .ProductosPImg {
@@ -151,7 +152,7 @@ body {
 /*SECCION CONTACTO*/
 .EncabezadoContacto h2{
 	text-align: left;
-	background-color: #070b39;
+	background-color: #6E6E6E;
 	font-size: 35px;
 }
 
@@ -160,7 +161,7 @@ body {
 
 /* Footer */
 .Footer {
-	background-color: white;
+	background-color: #F2F2F2;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas:'Tel Copyright Redes'
