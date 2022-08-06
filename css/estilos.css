@@ -1,6 +1,6 @@
 html,
 body {
-	padding: 0;
+	padding: 2px;
 	margin: 0;
 	font-family: 'Dosis', sans-serif;
 	background: rgb(30,35,204);
@@ -26,6 +26,13 @@ body {
 .Menu, .Logo {
 	background-color: #F2F2F2;
 }
+
+.Logo:hover {
+	transition: all 1s linear;
+	transform: rotate(360deg);
+	translate: 150px;
+}
+
 .Menu .Secciones ul {
 	list-style: none;
 	column-gap: 10px;
@@ -65,13 +72,13 @@ body {
 
 /* Encabezados */
 .Encabezado h1 {
-	background-color: #6E6E6E; 
+	background-color: #F2F2F2; 
 	text-align: center;
 	font-size: 50px;
 }
 
 .EncabezadoSec h2 {
-	background-color: #6E6E6E;
+	background-color: #F2F2F2;
 	text-align: center;
 	font-size: 35px;
 }
@@ -91,7 +98,7 @@ body {
 }
 
 .ProdcutosImg{
-	padding-inline-start: 50px;
+	text-align: center;
 	margin: 10px;
 }
 
@@ -108,7 +115,8 @@ body {
 
 .ImagenUbicacion {
 	text-align: center;
-	margin: 50px;
+	margin: 20px;
+	max-width: 100%;
 }
 
 
@@ -119,7 +127,7 @@ body {
 .NosotrosSub h2, h3{
 	text-align: left;
 	font-size: 25px;
-	background-color: #6E6E6E;
+	background-color: #F2F2F2;
 }
 
 .NosotrosSub p {
@@ -132,8 +140,8 @@ body {
 /* SECCION PRODUCTOS*/
 .ProductosP h3 {
 	font-size: 25px;
-	text-align: left;
-	background-color: #6E6E6E;
+	text-align: center;
+	background-color: #F2F2F2;
 }
 
 .ProductosPImg {
@@ -152,9 +160,10 @@ body {
 /*SECCION CONTACTO*/
 .EncabezadoContacto h2{
 	text-align: left;
-	background-color: #6E6E6E;
+	background-color: #F2F2F2;
 	font-size: 35px;
 }
+
 
 
 
@@ -164,9 +173,6 @@ body {
 	background-color: #F2F2F2;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas:'Tel Copyright Redes'
-						'Tel Copyright Redes'
-						'Tel Copyright Redes';
 	margin-top: auto;
 }
 
@@ -194,6 +200,11 @@ body {
 @media (max-width: 480px) {
 
 	/* INDEX */
+
+	body {
+		padding: 5px;
+	}
+
 	.Menu, .Logo {
 		background-color: white;
 	}
@@ -219,8 +230,8 @@ body {
 	}
 
 	.ImagenUbicacion {
-		width: 100%;
-		margin: 0%;
+		max-width: 100%;
+		padding: 10px;
 	}
 }
 
@@ -231,7 +242,7 @@ body {
 	}
 	
 	.ImagenUbicacion{
-		width: 100%;
+		max-width: 100%;
 		margin: 0%;
 	}
 }
