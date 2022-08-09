@@ -2,7 +2,9 @@ html,
 body {
 	padding: 2px;
 	margin: 0;
-	font-family: 'Dosis', sans-serif;
+	font-family: font-family 'Dosis', sans-serif;
+	font-family: 'Ibarra Real Nova', serif;
+	font-family: 'Merriweather', serif;
 	background: rgb(30,35,204);
 	background: linear-gradient(0deg, rgba(30,35,204,1) 0%, rgba(13,19,126,1) 25%, rgba(8,6,52,1) 50%);
 	color: #B8B8B8;
@@ -72,14 +74,14 @@ body {
 
 /* Encabezados */
 .Encabezado h1 {
-	background-color: #F2F2F2; 
 	text-align: center;
 	font-size: 50px;
-	margin-top: 10px;
+	margin-top: 100px;
+
 }
 
 .EncabezadoSec h2 {
-	background-color: #F2F2F2;
+	margin-top: 70px;
 	text-align: center;
 	font-size: 35px;
 }
@@ -107,9 +109,14 @@ body {
 	align-items: stretch;
 }
 
+.Productos {
+	width: calc(100%/3);
+}
+
 .Productos h3{
 	font-size: 25px;
 	align-items: flex-start;
+	text-align: center;
 }
 
 .ProdcutosImg{
@@ -142,7 +149,9 @@ body {
 .NosotrosSub h2, h3{
 	text-align: left;
 	font-size: 25px;
-	background-color: #F2F2F2;
+	text-align: center;
+	margin-top: 30px;
+
 }
 
 .NosotrosSub p {
@@ -156,7 +165,7 @@ body {
 .ProductosP h3 {
 	font-size: 25px;
 	text-align: center;
-	background-color: #F2F2F2;
+	margin-top: 30px;
 }
 
 .ProductosPImg {
@@ -176,9 +185,8 @@ body {
 /*SECCION CONTACTO*/
 .EncabezadoContacto h2{
 	text-align: left;
-	background-color: #F2F2F2;
 	font-size: 35px;
-	margin-top: 15px;
+	margin-top: 30px;
     margin-bottom: 2px;
 }
 
