@@ -14,9 +14,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-}
-
-* {
 	box-sizing: content-box;
 }
 
@@ -109,22 +106,22 @@ body {
 	align-items: stretch;
 }
 
-.Productos {
+.Producto {
 	width: calc(100%/3);
 }
 
-.Productos h3{
+.Producto h3{
 	font-size: 25px;
 	align-items: flex-start;
 	text-align: center;
 }
 
-.ProdcutosImg{
+.ProdcutoImg{
 	text-align: center;
 	margin: 10px;
 }
 
-.Productos li{
+.Producto li{
 	font-size: 15px;
 	list-style: none;
 	padding-inline-start: 10px;
@@ -162,20 +159,20 @@ body {
 
 
 /* SECCION PRODUCTOS*/
-.ProductosP h3 {
+.ProductoP h3 {
 	font-size: 25px;
 	text-align: center;
 	margin-top: 30px;
 }
 
-.ProductosPImg {
+.ProductoPImg {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	margin-bottom: 10px;
 }
 
-.ProdcutosPImg ul, li, span{
+.ProdcutoPImg ul, li, span{
 	font-size: 15px;
 	list-style: square;
 }
@@ -254,17 +251,17 @@ body {
 	}
 
 	.VendidosYOfertas {
+		display: flex;
 		flex-wrap: wrap;
-		column-gap: 0;
+	}
+
+	.Producto {
+		width: auto;
 	}
 
 	.ImagenUbicacion {
 		max-width: 100%;
 		padding: 10px;
-	}
-
-	.Productos h3, li {
-		text-align: center;
 	}
 }
 
