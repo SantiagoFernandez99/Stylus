@@ -199,7 +199,11 @@ body {
 	background-color: #F2F2F2;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	margin-top: auto;
+	padding: 10px;
+}
+
+.Tel ul {
+	padding: 0%;
 }
 
 .Tel li {
@@ -213,13 +217,17 @@ body {
 	list-style: none;
 }
 
-.Copyright li {
+.Copyright li{
 	text-align: center;
 	font-size: small;
 	list-style: none;
 	text-decoration: none;
 }
 
+.Copyright {
+	padding: 0%;
+	margin-top: 70px;
+}
 
 /* MEDIA QUERY */
 
@@ -231,11 +239,6 @@ body {
 
 	.Menu, .Logo {
 		background-color: white;
-	}
-
-	.Logo img {
-		width: 60%;
-		height: 80%;
 	}
 
 	.Logo:hover {
@@ -270,12 +273,6 @@ body {
 }
 
 @media (max-width: 852px) {
-
-	.Logo img {
-		width: 60%;
-		height: 80%;
-		margin-top: 5px;
-	}
 
 	.Logo:hover {
 		display: none;
