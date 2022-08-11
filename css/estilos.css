@@ -47,6 +47,7 @@ body {
 .Menu {
 	display: flex;
 	justify-content: space-between;
+	text-align: center;
 }
 
 .Secciones li {
@@ -234,6 +235,7 @@ body {
 
 	.Logo img {
 		width: 60%;
+		height: 80%;
 	}
 
 	.Logo:hover {
@@ -246,6 +248,7 @@ body {
 	
 	.MenuBtn {
 	display: inline-block;
+	te
 	}
 
 	.Secciones{
@@ -271,16 +274,26 @@ body {
 	}
 }
 
-@media (max-width: 990px) {
+@media (max-width: 852px) {
 
-	.VendidosYOfertas{
-		column-gap: 0%;
+	.Logo img {
+		width: 60%;
+		height: 80%;
+		margin-top: 5px;
 	}
-	
-	.ImagenUbicacion{
-		max-width: 100%;
-		margin: 0%;
+
+	.Secciones ul {
+		display: none;
 	}
+
+	.MenuBtn {
+		display: inline-block;
+		margin-top: 5px;
 }
 
+	.Secciones {
+	height: auto;
+	}
 
+
+}
