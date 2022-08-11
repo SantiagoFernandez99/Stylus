@@ -232,6 +232,14 @@ body {
 		background-color: white;
 	}
 
+	.Logo img {
+		width: 60%;
+	}
+
+	.Logo:hover {
+		display: none;
+	}
+
 	.Secciones ul {
 			display: none;
 		}
