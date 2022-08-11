@@ -222,9 +222,7 @@ body {
 
 /* MEDIA QUERY */
 
-@media (max-width: 485px) {
-
-	/* INDEX */
+@media (max-width: 480px) {
 
 	body {
 		padding: 5px;
