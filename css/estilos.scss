@@ -1,0 +1,310 @@
+$ColorLetras:#B8B8B8;
+$ColorBlanco: #F2F2F2;
+
+body{
+    padding: 2px;
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: rgb(30,35,204);
+	background: linear-gradient(0deg, rgba(30,35,204,1) 0%, rgba(13,19,126,1) 25%, rgba(8,6,52,1) 50%);
+	color: $ColorLetras;
+	font-size: 20px;
+	list-style: none;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	box-sizing: content-box;
+}
+
+/* MENU */
+
+.Menu {
+    background-color: $ColorBlanco;
+    display: flex;
+	justify-content: space-between;
+    
+        ul {
+            list-style: none;
+	        column-gap: 10px;
+	        margin: 10px;
+	        padding: 0%;
+            }
+        
+        a {
+            text-decoration: none;
+	        color: black;
+        }
+}
+
+.Logo {
+    background-color: $ColorBlanco;
+
+    .Logo:hover {
+        transition: all 1s linear;
+	    transform: rotate(360deg);
+	    translate: 150px;
+    }
+}
+
+.Secciones{
+    margin-top: 5px;
+
+    li{
+        display: inline-block;
+	    font-size: 25px;
+    }
+}
+
+.MenuBtn {
+    display: none;
+	color: black;
+	font-size: 20px;
+	border: none;
+	padding: 10px 20px;
+	padding-left: 25px;
+	background-color: transparent;
+	background-image: url("../imagenes/menu.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+/* ENCABEZADO */
+
+.Encabezado {
+    h1{
+        text-align: center;
+	    font-size: 50px;
+	    margin-top: 100px;
+    }
+}
+
+.EncabezadoSec {
+    h2 {
+        margin-top: 70px;
+	    text-align: center;
+	    font-size: 35px;
+    }
+}
+
+/* INDEX */
+
+.slide {
+    margin: 10px;
+
+        img {
+            height: 500px;
+        }
+}
+
+.carousel-indicators {
+            background-color: gray;
+}
+
+.VendidosYOfertas {
+    display: flex;
+	flex-wrap: nowrap;
+	column-gap: 10px;
+	justify-content: center;
+	align-items: stretch
+}
+
+.Producto {
+    width: calc(100%/3);
+
+        h3{
+            font-size: 25px;
+            align-items: flex-start;
+            text-align: center;
+        }
+
+        li {
+            font-size: 15px;
+            list-style: none;
+            padding-inline-start: 10px;
+            margin: 0%;
+            list-style: square;
+            text-align: left;
+        }
+}
+
+.ProdcutoImg {
+	text-align: center;
+	margin: 10px;
+}
+
+/* UBICACION */ 
+
+.ImagenUbicacion {
+	text-align: center;
+	margin: 20px;
+	max-width: 100%;
+}
+
+
+/* SECCION NOSOTROS */
+
+.NosotrosSub {
+    h2, h3{
+        text-align: left;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    p {
+        text-align: left;
+        font-size: 20px;
+    }
+}
+
+
+/* SECCION PRODUCTOS */
+
+.ProductoP h3 {
+	font-size: 25px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.ProductoPImg {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 10px;
+
+    ul, li, span{
+        font-size: 15px;
+        list-style: square;
+    }
+}
+
+
+/* SECCION CONTACTO */ 
+
+.EncabezadoContacto h2{
+	text-align: left;
+	font-size: 35px;
+	margin-top: 30px;
+    margin-bottom: 2px;
+}
+
+
+.LoginSec {
+	margin-bottom: 300px;
+}
+
+
+/* Footer */
+.Footer {
+	background-color: $ColorBlanco;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 10px;
+}
+
+.Tel {
+    ul{
+	padding: 0%;
+    }
+
+    li {
+	text-align: left;
+	list-style: none;
+    }
+}
+
+.Redes li, a {
+	text-align: right;
+	text-decoration: none;
+	list-style: none;
+}
+
+.Copyright {
+	padding: 0%;
+	margin-top: 70px;
+
+        li {
+            text-align: center;
+            font-size: small;
+            list-style: none;
+            text-decoration: none;
+        }
+}
+
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 480px) {
+
+    body {
+		padding: 5px;
+	}
+
+    .Menu {
+        background-color: $ColorBlanco;
+    }
+
+    .Logo {
+        background-color: $ColorBlanco;
+
+        .Logo:hover {
+            display: none;
+        }
+    }
+
+    .Secciones {
+        ul {
+            display: none;
+        }
+    }
+
+    .MenuBtn {
+        display: inline-block;
+    }
+
+    .Encabezado {
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    .VendidosYOfertas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Producto {
+        width: auto;
+    }
+
+    .ImagenUbicacion {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 852px) {
+
+	.Logo:hover {
+		display: none;
+	}
+
+	.Secciones ul {
+		display: none;
+	}
+
+	.MenuBtn {
+		display: inline-block;
+		margin-top: 5px;
+}
+
+	.Secciones {
+	height: auto;
+	}
+
+
+}
