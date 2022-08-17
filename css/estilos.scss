@@ -39,7 +39,7 @@ body {
     .Logo {
     background-color: $ColorBlanco;
 
-        .&:hover {
+        .Logo:hover {
             transition: all 1s linear;
             transform: rotate(360deg);
             translate: 150px;
@@ -49,9 +49,14 @@ body {
     .Secciones {
         margin-top: 5px;
 
+        li:hover {
+            background: rgba(0,0,0,0.3);
+        }
+
         li {
             display: inline-block;
             font-size: 25px;
+            border-right: 1px solid black;
         }
     }
 
@@ -291,20 +296,22 @@ body {
 
 @media (max-width: 852px) {
 
-	.Logo:hover {
+    .Menu {
+        .Logo:hover {
 		display: none;
-	}
+	    }
 
-	.Secciones {
-        height: auto;
+	    .Secciones {
+            height: auto;
         
-        ul {
-            display: none;
+            ul {
+                display: none;
+            }
         }
-    }
 
-	.MenuBtn {
-		display: inline-block;
-		margin-top: 5px;
+        .MenuBtn {
+        display: inline-block;
+            margin-top: 5px;
+        }
     }
 }
