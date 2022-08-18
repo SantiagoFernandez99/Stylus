@@ -60,18 +60,8 @@ body {
         }
     }
 
-    .MenuBtn {
+    .dropdown {
         display: none;
-        color: black;
-        font-size: 20px;
-        border: none;
-        padding: 10px 20px;
-        padding-left: 25px;
-        background-color: transparent;
-        background-image: url("../imagenes/menu.png");
-        background-position: left center;
-        background-repeat: no-repeat;
-        background-color: transparent;
     }
 }
 
@@ -244,7 +234,7 @@ body {
 
 /* MEDIA QUERY */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
     body {
 		padding: 5px;
@@ -267,8 +257,10 @@ body {
             }
         }
 
-        .MenuBtn {
+        .dropdown {
             display: inline-block;
+            padding-top: 10px;
+            padding-right: 20px;
         }
     }
 
@@ -294,24 +286,3 @@ body {
 }
 
 
-@media (max-width: 852px) {
-
-    .Menu {
-        .Logo:hover {
-		display: none;
-	    }
-
-	    .Secciones {
-            height: auto;
-        
-            ul {
-                display: none;
-            }
-        }
-
-        .MenuBtn {
-        display: inline-block;
-            margin-top: 5px;
-        }
-    }
-}
