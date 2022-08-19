@@ -53,10 +53,12 @@ body {
             background: rgba(0,0,0,0.3);
         }
 
-        li {
-            display: inline-block;
-            font-size: 25px;
-            border-right: 1px solid black;
+        .menu-desktop {
+            li {
+                display: inline-block;
+                font-size: 25px;
+                border-right: 1px solid black;
+            }
         }
     }
 
@@ -251,10 +253,8 @@ body {
             }
         }
 
-        .Secciones {
-            ul {
-                display: none;
-            }
+        .menu-desktop {
+            display: none
         }
 
         .dropdown {

@@ -44,7 +44,7 @@ body {
 .Menu .Secciones li:hover {
   background: rgba(0, 0, 0, 0.3);
 }
-.Menu .Secciones li {
+.Menu .Secciones .menu-desktop li {
   display: inline-block;
   font-size: 25px;
   border-right: 1px solid black;
@@ -199,7 +199,7 @@ body {
   .Menu .Logo .Logo:hover {
     display: none;
   }
-  .Menu .Secciones ul {
+  .Menu .menu-desktop {
     display: none;
   }
   .Menu .dropdown {
