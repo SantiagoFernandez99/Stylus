@@ -8,9 +8,6 @@ body {
   font-size: 20px;
   list-style: none;
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   box-sizing: content-box;
 }
 
@@ -94,7 +91,6 @@ body {
 }
 .VendidosYOfertas .Producto li {
   font-size: 15px;
-  list-style: none;
   padding-inline-start: 10px;
   margin: 0%;
   list-style: square;
@@ -181,8 +177,8 @@ body {
 .Footer .Copyright li {
   text-align: center;
   font-size: small;
-  list-style: none;
   text-decoration: none;
+  list-style: none;
 }
 
 /* MEDIA QUERY */
