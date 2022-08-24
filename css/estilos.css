@@ -16,6 +16,7 @@ body {
   background-color: #F2F2F2;
   display: flex;
   justify-content: space-between;
+  padding-top: 5px;
 }
 .Menu ul {
   list-style: none;
@@ -30,10 +31,8 @@ body {
 .Menu .Logo {
   background-color: #F2F2F2;
 }
-.Menu .Logo .Logo:hover {
-  transition: all 1s linear;
-  transform: rotate(360deg);
-  translate: 150px;
+.Menu .Logo img {
+  padding-left: 20px;
 }
 .Menu .Secciones {
   margin-top: 5px;
@@ -92,14 +91,11 @@ body {
 .VendidosYOfertas .Producto li {
   font-size: 15px;
   padding-inline-start: 10px;
-  margin: 0%;
-  list-style: square;
+  margin: 0px;
   text-align: left;
-}
-
-.ProdcutoImg {
   text-align: center;
-  margin: 10px;
+  text-decoration: none;
+  list-style: none;
 }
 
 /* UBICACION */
@@ -191,9 +187,6 @@ body {
   }
   .Menu .Logo {
     background-color: #F2F2F2;
-  }
-  .Menu .Logo .Logo:hover {
-    display: none;
   }
   .Menu .menu-desktop {
     display: none;
