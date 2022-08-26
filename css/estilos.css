@@ -94,8 +94,7 @@ body {
   margin: 0px;
   text-align: left;
   text-align: center;
-  text-decoration: none;
-  list-style: none;
+  list-style: inside;
 }
 
 /* UBICACION */
@@ -123,15 +122,15 @@ body {
   text-align: center;
   margin-top: 30px;
 }
-.ProductoP h3 .ProductoPImg {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 10px;
+.ProductoP ul {
+  text-align: center;
+  list-style: inside;
 }
-.ProductoP h3 .ProductoPImg ul, .ProductoP h3 .ProductoPImg li, .ProductoP h3 .ProductoPImg span {
+.ProductoP .ProductoPImg {
+  margin-bottom: 100px;
+}
+.ProductoP .ProductoPImg ul, .ProductoP .ProductoPImg li, .ProductoP .ProductoPImg span {
   font-size: 15px;
-  list-style: square;
 }
 
 /* SECCION CONTACTO */
