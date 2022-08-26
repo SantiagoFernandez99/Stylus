@@ -1,11 +1,15 @@
 $ColorLetras: #B8B8B8;
 $ColorBlanco: #F2F2F2;
 
-@mixin Decoracion {
+@mixin SinDecoracion {
     text-decoration: none;
     list-style: none;
 }
 
+@mixin Decoracion {
+    text-align: center;
+    list-style: inside;
+}
 
 body {
     padding: 2px;
@@ -122,9 +126,7 @@ body {
                 padding-inline-start: 10px;
                 margin: 0px;
                 text-align: left;
-                text-align: center;
                 @include Decoracion;
-
             }
     }
 }
@@ -169,9 +171,9 @@ body {
         align-items: center;
         margin-bottom: 10px;
 
-        ul, li, span{
+        ul, li, span {
             font-size: 15px;
-            list-style: square;
+            @include Decoracion;
         }
     }
 }
@@ -214,7 +216,7 @@ body {
 
     .Redes li, a {
         text-align: right;
-        @include Decoracion;
+        @include SinDecoracion;
     }
 
     .Copyright {
@@ -224,7 +226,7 @@ body {
             li {
                 text-align: center;
                 font-size: small;
-                @include Decoracion;
+                @include SinDecoracion;
             }
     }
 }
