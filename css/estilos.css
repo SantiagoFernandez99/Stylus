@@ -66,9 +66,6 @@ body {
 .slide {
   margin: 10px;
 }
-.slide img {
-  height: 500px;
-}
 .slide .carousel-indicators {
   background-color: gray;
 }
@@ -76,17 +73,19 @@ body {
 .VendidosYOfertas {
   display: flex;
   flex-wrap: nowrap;
-  column-gap: 10px;
   justify-content: center;
   align-items: stretch;
 }
 .VendidosYOfertas .Producto {
   width: 33.3333333333%;
+  display: flex;
+  flex-direction: column;
 }
 .VendidosYOfertas .Producto h3 {
   font-size: 25px;
   align-items: flex-start;
   text-align: center;
+  flex: 1;
 }
 .VendidosYOfertas .Producto li {
   font-size: 15px;
@@ -151,7 +150,8 @@ body {
   background-color: #F2F2F2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .Footer .Tel ul {
   padding: 0%;

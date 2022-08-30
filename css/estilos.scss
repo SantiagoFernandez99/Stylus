@@ -96,10 +96,6 @@ body {
 .slide {
     margin: 10px;
 
-        img {
-            height: 500px;
-        }
-
     .carousel-indicators {
                 background-color: gray;
     }
@@ -108,17 +104,20 @@ body {
 .VendidosYOfertas {
     display: flex;
 	flex-wrap: nowrap;
-	column-gap: 10px;
+
 	justify-content: center;
 	align-items: stretch;
 
     .Producto {
         width: calc(100%/3);
+        display: flex;
+        flex-direction: column;
     
             h3 {
                 font-size: 25px;
                 align-items: flex-start;
                 text-align: center;
+                flex: 1;
             }
 
             li {
@@ -204,7 +203,8 @@ body {
 	background-color: $ColorBlanco;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	padding: 10px;
+	padding-right: 10px;
+    padding-left: 10px;
 
     .Tel {
         ul{
