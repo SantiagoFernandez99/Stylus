@@ -11,6 +11,13 @@ $ColorBlanco: #F2F2F2;
     list-style: inside;
 }
 
+@mixin TamañoEncabezado {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
 body {
     padding: 2px;
 	margin: 0;
@@ -56,7 +63,7 @@ body {
         margin-top: 5px;
 
         a {
-            padding: 3px;
+            padding-right: 4px;
         }
 
         li:hover {
@@ -84,10 +91,11 @@ body {
         text-align: center;
 	    font-size: 50px;
 	    margin-top: 100px;
+        font-weight: bold;
     }
 
     p {
-        padding: 10px;
+        @include TamañoEncabezado;
     }
 }
 
@@ -96,6 +104,7 @@ body {
         margin-top: 70px;
 	    text-align: center;
 	    font-size: 35px;
+        font-weight: bold;
     }
 }
 
@@ -126,6 +135,7 @@ body {
                 align-items: flex-start;
                 text-align: center;
                 flex: 1;
+                padding-top: 20px;
             }
 
             li {
@@ -150,16 +160,29 @@ body {
 /* SECCION NOSOTROS */
 
 .NosotrosSub {
+    
     h2, h3{
         text-align: left;
         font-size: 25px;
         text-align: center;
         margin-top: 30px;
+        font-weight: bold;
     }
 
     p {
         text-align: left;
         font-size: 20px;
+        @include TamañoEncabezado;
+    }
+
+    ul {
+        @include TamañoEncabezado;
+    }
+
+
+    .Valores {
+        text-align: left;
+        @include SinDecoracion;
     }
 }
 
@@ -172,6 +195,7 @@ body {
 	font-size: 25px;
 	text-align: center;
 	margin-top: 30px;
+    font-weight: bold;
     }
 
     ul {
@@ -196,13 +220,40 @@ body {
 	font-size: 35px;
 	margin-top: 30px;
     margin-bottom: 2px;
+    font-weight: bold;
 }
 
 
 /* LOGIN */
 
 .LoginSec {
-	margin-bottom: 300px;
+	margin-bottom: 200px;
+    padding: 5px;
+    background-color: #100f38;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 50px;
+
+    .LoginForm {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    .LoginSubmit {
+        margin-left: 70px;
+        margin-bottom: 35px;
+    }
+
+    ul {
+        @include SinDecoracion;
+    }
+
+    a {
+        color: $ColorLetras;
+    }
 }
 
 
