@@ -37,6 +37,9 @@ body {
 .Menu .Secciones {
   margin-top: 5px;
 }
+.Menu .Secciones a {
+  padding: 3px;
+}
 .Menu .Secciones li:hover {
   background: rgba(0, 0, 0, 0.3);
 }
@@ -54,6 +57,9 @@ body {
   text-align: center;
   font-size: 50px;
   margin-top: 100px;
+}
+.Encabezado p {
+  padding: 10px;
 }
 
 .EncabezadoSec h2 {
@@ -88,12 +94,12 @@ body {
   flex: 1;
 }
 .VendidosYOfertas .Producto li {
-  font-size: 15px;
+  font-size: 20px;
   padding-inline-start: 10px;
   margin: 0px;
-  text-align: left;
   text-align: center;
-  list-style: inside;
+  text-decoration: none;
+  list-style: none;
 }
 
 /* UBICACION */
