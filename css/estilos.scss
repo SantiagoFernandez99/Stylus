@@ -15,6 +15,13 @@ $ColorBlanco: #F2F2F2;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 0%;
+    padding-bottom: 2%;
+}
+
+@mixin SinTamaño {
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
     padding-bottom: 0%;
 }
 
@@ -114,7 +121,7 @@ body {
     margin: 10px;
 
     .carousel-indicators {
-                background-color: gray;
+                background-color: $ColorLetras;
     }
 }
 
@@ -136,6 +143,7 @@ body {
                 text-align: center;
                 flex: 1;
                 padding-top: 20px;
+                font-weight: bold;
             }
 
             li {
@@ -170,19 +178,97 @@ body {
     }
 
     p {
-        text-align: left;
-        font-size: 20px;
-        @include TamañoEncabezado;
+        text-align: center;
+        font-size: 15px;
+        padding: 5px;
     }
-
-    ul {
-        @include TamañoEncabezado;
-    }
-
 
     .Valores {
+        display: flex;
+
+        ul {
         text-align: left;
         @include SinDecoracion;
+        padding-left: 20%;
+        padding-right: 25%;
+        }
+
+        img {
+            max-width: 25%;
+        }
+    }
+
+    .NosotrosCompresores {
+        display: flex;
+        padding-bottom: 50px;
+
+        p {
+            padding-left: 25%;
+            padding-right: 25%;
+            text-align: center;
+        }
+
+        img {
+            max-width: 20%;
+            height: auto;
+            margin-right: 15%;
+        }
+
+        img:hover {
+            transition: all 0.6s ease;
+            
+        }
+    }
+
+    .NosotrosAire {
+        display: flex;
+        padding-bottom: 30px;
+
+        h3 {
+        padding-right: 10px !important;
+        }
+
+        img {
+            max-width: 25%;
+        }
+    }
+
+    .NosotrosSuperCool {
+        display: flex;
+        padding-left: 10%;
+
+        img {
+            max-width: 15%;
+            height: auto;
+        }
+    }
+
+    .NosotrosRefrigeracion {
+        display: flex;
+
+            img {
+                max-width: 20%;
+                margin-left: 10%;
+            }
+
+            p {
+                padding-left: 10%;
+            }
+    }
+
+    .NosotrosEquipo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        img {
+            max-width: 50%;
+        }
     }
 }
 
@@ -210,6 +296,19 @@ body {
             font-size: 15px;
         }
     }
+
+    .w-100 {
+        margin-left: 25%;
+        width: 50%!important;
+    }
+
+    .carousel-control-prev {
+        left: 15%;
+    }
+
+    .carousel-control-next {
+        right: 15%;
+    }
 }
 
 
@@ -221,6 +320,10 @@ body {
 	margin-top: 30px;
     margin-bottom: 2px;
     font-weight: bold;
+
+    input {
+        display: flex;
+    }
 }
 
 
@@ -247,6 +350,10 @@ body {
         margin-bottom: 35px;
     }
 
+    p {
+        text-align: center
+    }
+
     ul {
         @include SinDecoracion;
     }
@@ -262,10 +369,12 @@ body {
 	background-color: $ColorBlanco;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	padding-right: 10px;
+	padding-right: 5px;
     padding-left: 10px;
 
     .Tel {
+        color: black;
+
         ul{
         padding: 0%;
         }
@@ -277,19 +386,18 @@ body {
     }
 
     .Redes li, a {
+        color: black;
         text-align: right;
         @include SinDecoracion;
     }
 
     .Copyright {
         padding: 0%;
-        margin-top: 70px;
-
-            li {
-                text-align: center;
-                font-size: small;
-                @include SinDecoracion;
-            }
+        margin-top: 85px;
+        color: black;
+        text-align: center;
+        font-size: small;
+        @include SinDecoracion;
     }
 }
 
@@ -324,6 +432,10 @@ body {
         h1 {
             font-size: 40px;
         }
+
+        p {
+            font-size: 15px;
+        }
     }
 
     .VendidosYOfertas {
@@ -339,6 +451,79 @@ body {
         max-width: 100%;
         padding: 10px;
     }
+
+    .LoginSec ul {
+        font-size: 15px;
+        padding: 0%;
+    }
+
+    /* NOSOTROS */
+
+    .NosotrosSub {
+
+        p {
+            text-align: center;
+            font-size: 15px;
+            @include SinTamaño;
+        }
+    
+        ul {
+            font-size: 15px;
+            @include SinTamaño;
+        }
+    
+    
+        .Valores {
+
+            ul {
+            text-align: left;
+            padding-left: 5%;
+            padding-right: 5%;
+            }
+
+            img {
+                max-width: 50%;
+            }
+        }
+    
+        .NosotrosCompresores {
+            display: flex;
+            align-items: center;
+    
+            p {
+                padding-right: 2%;
+                padding-left: 2%;
+            }
+    
+            img {
+                max-width: 100%;
+                max-height: 150px;
+                margin-right: 0%;
+            }
+    
+            img:hover {
+                transition: all 0.6s ease;
+                
+            }
+        }
+    }
 }
 
+@media (min-width: 769px) and (max-width: 1199px) {
 
+.NosotrosSub {
+
+    .NosotrosCompresores {
+        display: flex;
+        align-items: center;
+
+            p {
+                padding-right: 5%;
+            }
+
+            img{
+                margin-right: 5%;
+            }
+        }
+    }
+}
