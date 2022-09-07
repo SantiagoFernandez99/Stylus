@@ -173,7 +173,7 @@ body {
         text-align: left;
         font-size: 25px;
         text-align: center;
-        margin-top: 30px;
+        margin-top: 10px;
         font-weight: bold;
     }
 
@@ -203,8 +203,8 @@ body {
         padding-bottom: 50px;
 
         p {
-            padding-left: 25%;
-            padding-right: 25%;
+            padding-left: 10%;
+            padding-right: 10%;
             text-align: center;
         }
 
@@ -213,16 +213,11 @@ body {
             height: auto;
             margin-right: 15%;
         }
-
-        img:hover {
-            transition: all 0.6s ease;
-            
-        }
     }
 
     .NosotrosAire {
         display: flex;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
 
         h3 {
         padding-right: 10px !important;
@@ -236,6 +231,7 @@ body {
     .NosotrosSuperCool {
         display: flex;
         padding-left: 10%;
+        padding-bottom: 50px;
 
         img {
             max-width: 15%;
@@ -245,6 +241,7 @@ body {
 
     .NosotrosRefrigeracion {
         display: flex;
+        padding-bottom: 50px;
 
             img {
                 max-width: 20%;
@@ -258,8 +255,10 @@ body {
 
     .NosotrosEquipo {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 10%;
+        padding-right: 10%;
 
         p {
             padding: 0%;
@@ -356,6 +355,8 @@ body {
 
     ul {
         @include SinDecoracion;
+        text-align: center;
+        padding: 0px;
     }
 
     a {
@@ -499,11 +500,6 @@ body {
                 max-width: 100%;
                 max-height: 150px;
                 margin-right: 0%;
-            }
-    
-            img:hover {
-                transition: all 0.6s ease;
-                
             }
         }
     }
