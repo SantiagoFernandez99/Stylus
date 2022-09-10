@@ -103,6 +103,7 @@ body {
 
     p {
         @include TamañoEncabezado;
+        text-align: center;
     }
 }
 
@@ -196,6 +197,11 @@ body {
         img {
             max-width: 25%;
         }
+
+        img:hover {
+            transition: all 1s ease-out;
+	        transform: rotateY( 180deg);
+        }
     }
 
     .NosotrosCompresores {
@@ -230,6 +236,8 @@ body {
 
     .NosotrosSuperCool {
         display: flex;
+        align-items: center;
+        justify-content: flex-start;
         padding-left: 10%;
         padding-bottom: 50px;
 
@@ -313,12 +321,20 @@ body {
 
 /* SECCION CONTACTO */ 
 
-.EncabezadoContacto h2{
+.EncabezadoContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+    h2 {
 	text-align: left;
 	font-size: 35px;
 	margin-top: 30px;
     margin-bottom: 2px;
     font-weight: bold;
+    }
 
     input {
         display: flex;
@@ -490,6 +506,7 @@ body {
         .NosotrosCompresores {
             display: flex;
             align-items: center;
+            padding-bottom: 80px;
     
             p {
                 padding-right: 2%;
@@ -500,6 +517,43 @@ body {
                 max-width: 100%;
                 max-height: 150px;
                 margin-right: 0%;
+            }
+        }
+
+        .NosotrosAire {
+            display: flex;
+            padding-bottom: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+
+            img {
+                max-width: 50%;
+            }
+        }
+
+        .NosotrosSuperCool {
+            padding-left: 0%;
+
+            img {
+            max-width: 30%;
+            }
+        }
+
+        .NosotrosRefrigeracion {
+
+            img {
+                max-width: 35%;
+                margin-left: 0%;
+            }
+        }
+
+        .NosotrosEquipo {
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                max-width: 75%;
             }
         }
     }
@@ -519,6 +573,14 @@ body {
 
             img{
                 margin-right: 5%;
+            }
+        }
+
+        .NosotrosSuperCool {
+            padding-right: 10%;
+
+            img {
+                max-width: 20%;
             }
         }
     }
