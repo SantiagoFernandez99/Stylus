@@ -20,7 +20,7 @@ while (quiereComprar === "si") {
         metodoDePago = prompt("Por favor responda efectivo, debito, credito o salir");
     }
     if(metodoDePago === "salir") {
-        console.log('hola')
+        break;
     }
     switch (metodoDePago) {
         case "efectivo":
@@ -47,4 +47,5 @@ while (quiereComprar === "si") {
             break;
     }
     alert("¡Felicidades compraste tu compresor!")
+    break;
 }
