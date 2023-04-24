@@ -19,8 +19,8 @@ if (quiereComprar === "si") {
     ) {
         metodoDePago = prompt("Por favor responda efectivo, debito, credito o salir");
     }
-    if(metodoDePago === "salir") {
-    }
+    if(metodoDePago !== "salir") {
+    
     switch (metodoDePago) {
         case "efectivo":
             const descuento = precioOferta * 0.1;
@@ -46,4 +46,5 @@ if (quiereComprar === "si") {
             break;
     }
     alert("¡Felicidades compraste tu compresor!")
+    }
 }
